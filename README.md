@@ -1,3 +1,4 @@
+
 # Car Personality Quiz
 
 Discover which car brand or model aligns with your personality! This interactive quiz dynamically loads questions and answers, calculates personalized results, and provides a polished user experience through responsive design and engaging visuals.
@@ -41,3 +42,6 @@ Discover which car brand or model aligns with your personality! This interactive
 
 ![Image](https://github.com/user-attachments/assets/e68f02cd-ab10-4230-aa2b-3f588aa2c66c)
 
+
+# CS52
+CS52 LABS ALL IN ONE
