@@ -1,0 +1,319 @@
+/* 
+Hero section gradient and background techniques from W3Schools: https://www.w3schools.com/css/, https://www.shecodes.io/athena/4978-how-to-write-a-linear-gradient-with-a-url-in-css
+Hover Effects: https://css-tricks.com/css-link-hover-effects/
+calculations for answer containers/boxers: ChatGPT helped with calculating the area of the coloumns: flex: 1 1 calc(33.333% - 20px);  Three items per row 
+*/
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #0f172a;
+    color: #e2e8f0;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Hero  */
+  .hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('img/futuristic.jpg') center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #e2e8f0;
+  }
+  
+  .hero h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    color: #38bdf8;
+  }
+  
+  .hero p {
+    font-size: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #94a3b8;
+  }
+  
+  .hero img {
+    max-width: 80%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  }
+
+  /* Selector */
+  .quiz-selector {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: rgba(15, 23, 42, 0.9); 
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    margin-top: -30px;
+  }
+  
+  .quiz-selector h2 {
+    font-size: 2rem;
+    color: #38bdf8;
+    margin-bottom: 20px;
+  }
+  
+  
+  .quiz-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .quiz-button {
+    background-color: #0ea5e9;
+    color: #ffffff;
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .quiz-button:hover {
+    background-color: #0284c7;
+    transform: scale(1.1);
+  }
+  
+  /*  Container */
+  .quiz-container {
+    display: none;
+    padding: 30px;
+    background-color: #1e293b;
+    border-radius: 15px;
+    max-width: 800px;
+    margin: 20px auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  }
+
+  .quiz-button img {
+    display: block;
+    margin: 0 auto 10px;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .question {
+    margin-bottom: 40px;
+  }
+  
+  .question h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #e2e8f0;
+  }
+  
+  .answers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.answers label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 calc(33.333% - 20px); /* Three items per row */
+    max-width: calc(33.333% - 20px); /* Prevent overflow */
+    min-width: 200px; /* Avoid shrinking too much */
+    padding: 15px;
+    border: 2px solid #1e293b;
+    border-radius: 15px;
+    background-color: #0f172a;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.answers label img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+
+  
+  
+  
+  .answers label:hover {
+    background-color: #1e293b;
+    border-color: #38bdf8;
+    color: #38bdf8;
+    /* NO transform scaling */
+  }
+  
+  
+  .answers img {
+    width: 100%; 
+    max-width: 150px; 
+    height: auto; 
+    border-radius: 10px;
+    object-fit: cover; 
+    margin-bottom: 10px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0.9; /* Slight transparency for a clean look */
+  }
+  
+  
+  .answers img:hover {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  
+  .answers input {
+    display: none; /* Hide the radio button */
+  }
+  
+  .answers input:checked + span {
+    font-weight: bold;
+    color: #38bdf8;
+    border-bottom: 2px solid #38bdf8;
+  }
+  
+  .done-button {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .done-button button {
+    background-color: #38bdf8;
+    color: #0f172a;
+    font-size: 1.2rem;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+  }
+  
+  .done-button button:hover {
+    background-color: #0ea5e9;
+  }
+  
+  
+  /* Results Section */
+  .results {
+    text-align: center;
+    margin-top: 40px;
+    display: none;
+  }
+  
+  .results h2 {
+    font-size: 2.2rem;
+    color: #10b981;
+    margin-bottom: 20px;
+  }
+  
+  .result-content {
+    padding: 25px;
+    background: #0f172a;
+    border: 2px solid #1e293b;
+    border-radius: 15px;
+    display: inline-block;
+    color: #e2e8f0;
+  }
+  
+  .result-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .result-content p {
+    font-size: 1.4rem;
+    color: #94a3b8;
+    margin-top: 10px;
+  }/* Modal Styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  display: none; /* Hidden by default */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #1e293b;
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.modal-content img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.modal-content .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+  color: #94a3b8;
+  cursor: pointer;
+}
+
+.modal-content .close:hover {
+  color: #e2e8f0;
+}
+
+
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .answers label {
+      flex: 1 1 100%;
+    }
+  
+    .hero h1 {
+      font-size: 3rem;
+    }
+  
+    .hero p {
+      font-size: 1.2rem;
+    }
+  
+    .quiz-button {
+      font-size: 1rem;
+      padding: 10px 20px;
+    }
+  }
+  

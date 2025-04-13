@@ -1,0 +1,170 @@
+{
+    "title": "What Car Matches Your Personality?",
+    "outcomes": [
+      {
+        "id": "tech",
+        "text": "You're a Tesla Model S: Cutting-edge, innovative, and eco-conscious!",
+        "img": "img/Tesla.jpg"
+      },
+      {
+        "id": "adventure",
+        "text": "You're a Jeep Wrangler: Rugged, adventurous, and ready for anything!",
+        "img": "img/jeep.webp"
+      },
+      {
+        "id": "speed",
+        "text": "You're a Ferrari F8: Fast, thrilling, and built for unmatched performance!",
+        "img": "img/lambo.webp"
+      }
+    ],
+    "questions": [
+      {
+        "question_name": "What's your ideal driving experience?",
+        "answers": [
+          { 
+            "text": "Tech and Innovation", 
+            "outcome": "tech", 
+            "img": "img/luxury.webp" 
+          },
+
+          { 
+            "text": "Off-road Adventure", 
+            "outcome": "adventure", 
+            "img": "img/adventure.webp" 
+          },
+          { 
+            "text": "High-Speed Thrills", 
+            "outcome": "speed", 
+            "img": "img/speed.webp" }
+        ]
+      },
+      {
+        "question_name": "What's your favorite weekend activity?",
+        "answers": [
+          { 
+            "text": "Taking a scenic road trip", 
+            "outcome": "adventure", 
+            "img": "img/scenic.webp" },
+
+          { 
+            "text": "Working on DIY projects in the garage", 
+            "outcome": "tech", 
+            "img": "img/garage.webp" 
+          },
+          { 
+            "text": "Exploring the city", 
+            "outcome": "speed", 
+            "img": "img/night.webp" 
+          }
+        ]
+      },
+      {
+        "question_name": "How do you like your gadgets?",
+        "answers": [
+          { 
+            "text": "Cutting-edge technology", 
+            "outcome": "tech", 
+            "img": "img/tech-gadget.webp" 
+          },
+
+          { 
+            "text": "Simple and Reliable", 
+            "outcome": "adventure", 
+            "img": "img/reliable.webp"
+           },
+          { 
+            "text": "Stylish and Trendy", 
+            "outcome": "speed", 
+            "img": "img/stylish.webp" 
+          }
+        ]
+      },
+      {
+        "question_name": "What's your dream vacation car?",
+        "answers": [
+          { 
+            "text": "Electric car on the coast", 
+            "outcome": "tech", 
+            "img": "img/vacation.webp" 
+          },
+          { 
+
+            "text": "Car in the alleys", 
+            "outcome": "adventure",
+             "img": "img/town.webp" 
+            },
+
+          { 
+            "text": "Supercar in the city", 
+            "outcome": "speed", 
+            "img": "img/supercar.webp" 
+          }
+        ]
+      },
+      {
+        "question_name": "What car brand do you trust most?",
+        "answers": [
+          { 
+            "text": "Tesla", 
+            "outcome": "tech",
+             "img": "img/Tesla.jpg"
+             },
+
+          { 
+            "text": "Jeep", 
+            "outcome": "adventure", 
+            "img": "img/jeep.webp"
+             
+          },
+
+          { 
+            "text": "Ferrari", 
+            "outcome": "speed", 
+            "img": "img/lambo.webp"
+           }
+        ]
+      },
+      {
+        "question_name": "What’s your preferred car color?",
+        "answers": [
+          { 
+            "text": "Sleek White", 
+            "outcome": "tech", 
+            "img": "img/white.webp" },
+
+          { 
+            "text": "Bright Red", 
+            "outcome": "speed", 
+            "img": "img/red.webp" },
+
+          { 
+            "text": "Bold Yellow", 
+            "outcome": "adventure", 
+            "img": "img/yellow.webp" 
+          }
+        ]
+      },
+      {
+        "question_name": "Which road trip is your favorite?",
+        "answers": [
+          { 
+            "text": "Driving through a tech-friendly smart city", 
+            "outcome": "tech", 
+            "img": "img/tech-city.webp" },
+
+          { 
+            "text": "Exploring mountain passes", 
+            "outcome": "adventure", 
+            "img": "img/mountain.webp" 
+          },
+
+          { 
+            "text": "Speeding down the autobahn", 
+            "outcome": "speed", 
+            "img": "img/autobahn.webp" 
+          }
+        ]
+      }
+    ]
+  }
+  

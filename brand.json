@@ -1,0 +1,133 @@
+{
+  "title": "Which Car Brand Should You Drive?",
+  "outcomes": [
+    {
+      "id": "bmw",
+      "text": "You should drive a BMW: Luxurious, sporty, and stylish!",
+      "img": "img/bmw.webp"
+    },
+    {
+      "id": "ford",
+      "text": "You should drive a Ford: Built tough for adventure and utility!",
+      "img": "img/ford.webp"
+    },
+    {
+      "id": "tesla",
+      "text": "You should drive a Tesla: Innovative, eco-friendly, and cutting-edge!",
+      "img": "img/Tesla.jpg"
+    }
+  ],
+  "questions": [
+    {
+      "question_name": "What's your primary reason for driving?",
+      "answers": [
+        { 
+          "text": "Impressing Others", 
+          "outcome": "bmw", 
+          "img":"img/impress.webp" 
+        },
+
+        { 
+          "text": "Exploring Off-road", 
+          "outcome": "ford", 
+          "img":"img/scenic.webp" 
+        },
+
+        { 
+          "text": "Sustainability", 
+          "outcome": "tesla", 
+          "img":"img/sustainability.webp" 
+         }
+      ]
+    },
+    {
+      "question_name": "What's your preferred driving style?",
+      "answers": [
+        { 
+          "text": "Fast and Stylish", 
+          "outcome": "bmw", 
+          "img": "img/fast.webp" 
+        },
+
+        { 
+          "text": "Rugged and Adventurous", 
+          "outcome": "ford", 
+          "img":"img/adventure.webp" 
+        },
+
+        { 
+          "text": "Tech-Savvy and Innovative", 
+          "outcome": "tesla", 
+          "img":"img/white.webp" 
+        }
+      ]
+    },
+    {
+      "question_name": "How important is brand reputation?",
+      "answers": [
+        { 
+          "text": "Very Important", 
+          "outcome": "bmw", 
+          "img":"img/thumbs-up.webp" 
+        },
+
+        { 
+          "text": "Not Important", 
+          "outcome": "ford", 
+          "img":"img/thumbs-down.webp"
+         },
+
+        {
+           "text": "Revolutionary Brands Only", 
+          "outcome": "tesla", 
+          "img":"img/middle.webp" 
+        }
+      ]
+    },
+    {
+      "question_name": "Which type of car design do you prefer?",
+      "answers": [
+        { 
+          "text": "Sleek and Modern", 
+          "outcome": "bmw", 
+          "img":"img/white.webp"
+         },
+
+        { 
+          "text": "Robust and Functional", 
+          "outcome": "ford", 
+          "img":"img/robust.webp"
+         },
+
+        { 
+          "text": "Futuristic and Minimalist", 
+          "outcome": "tesla", 
+          "img":"img/futuristic.jpg" 
+        }
+
+      ]
+    },
+    {
+      "question_name": "What’s your favorite driving environment?",
+      "answers": [
+        { 
+          "text": "City Streets", 
+          "outcome": "bmw", 
+          "img":"img/autobahn.webp" 
+        },
+
+        {
+           "text": "Off-road Trails", 
+          "outcome": "ford", 
+          "img":"img/mountain.webp" 
+        },
+
+        {
+           "text": "Quiet Suburbs", 
+          "outcome": "tesla", 
+          "img":"img/tech-city.webp" 
+        }
+      ]
+    }
+  ]
+}
