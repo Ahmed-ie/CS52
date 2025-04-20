@@ -1,0 +1,114 @@
+/* Global styles */
+body {
+  background-color: #6B5B95;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Add Note Form */
+.add-note-container {
+  background-color: #7D6FA3;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  width: 320px;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.add-note-container input,
+.add-note-container textarea {
+  width: 90%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #F5F5F5;
+}
+
+.add-note-container button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.add-note-container button:hover {
+  background-color: #45A049;
+}
+
+/* Container */
+.notes-container {
+  background-color: #7D6FA3;
+  padding: 20px;
+  border-radius: 12px;
+  width: 650px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Note */
+.note {
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  /* Remove or comment out the fixed width */
+  /* width: 180px; */
+  min-height: 120px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  cursor: grab;
+}
+
+
+.note:hover {
+  transform: scale(1.02);
+}
+
+/* Draging */
+.note-handle {
+  background: black;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+/* 🎨 Editing */
+.note input,
+.note textarea {
+  width: 90%;
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #EDEDED;
+  font-size: 14px;
+}
+
+/* 🛠 Buttons */
+.note button {
+  background: none;
+  border: none;
+  color: red;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.note .edit-btn {
+  color: blue;
+}
