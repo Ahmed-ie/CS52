@@ -1,0 +1,95 @@
+$backgroundcolor: rgb(238, 242, 243); /* Modern clean look */
+$fontcolor: rgb(51, 51, 51); /* Dark gray for readable text */
+
+
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: $fontcolor;
+  background-color: $backgroundcolor;
+  margin: 50px;
+}
+
+
+#search-bar {
+  margin: 0 auto 20px auto; /* Center horizontally and add space below */
+  text-align: center;
+
+  input {
+    font-size: 1.5em;
+    border-radius: 0.25em;
+    padding: 8px;
+    width: 60%; /* Make it visually balanced */
+    border: 1px solid $fontcolor;
+  }
+}
+
+
+#video-detail {
+  width: 100%;
+}
+
+#video-section {
+  display: flex;
+  flex-wrap: wrap; /* Ensures items wrap to the next line if necessary */
+  gap: 15px; /* Space between items */
+  justify-content: center; /* Center the items */
+  padding: 20px;
+}
+
+#video-section li {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column; /* Stack the thumbnail and title */
+  align-items: center;
+  width: 200px; /* Fixed width for consistency */
+  padding: 10px;
+  background: #f8f8f8; /* Light background for contrast */
+  border: 1px solid #ddd;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#video-section li:hover {
+  transform: scale(1.05); /* Subtle zoom effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#video-section img {
+  width: 100%; /* Make the image fit the card width */
+  border-radius: 8px; /* Match border radius */
+  margin-bottom: 10px;
+}
+
+#video-section div {
+  font-size: 1em;
+  text-align: center; /* Center-align the text */
+  color: #333; /* Darker text for better readability */
+}
+
+#video-section li:hover {
+  transform: scale(1.05); /* Slight zoom */
+  background: #e6f7ff; /* Light blue background */
+  border-color: #87ceeb;
+}
+
+  @media (max-width: 768px) {
+    #search-bar input {
+      width: 90%; /* Full width on small screens */
+    }
+  
+    #video-section li {
+      width: 45%; /* Make thumbnails smaller on mobile */
+    }
+  
+    #video-detail iframe {
+      width: 90%; /* Shrink the video player for small screens */
+      height: 300px;
+    }
+  }
+  
+
+
+
